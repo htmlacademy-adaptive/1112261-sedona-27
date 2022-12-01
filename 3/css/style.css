@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 .button {
@@ -92,6 +92,7 @@ img {
   padding-bottom: 12px;
 }
 .hero {
+  color: #ffffff;
   background-color: #000000;
   background-image: url("../img/hero-background.jpg");
   background-position: 50%;
@@ -244,6 +245,7 @@ img {
   text-transform: uppercase;
 }
 .review__text-field {
+  box-sizing: border-box;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
@@ -254,12 +256,6 @@ img {
   width: 100%;
 }
 .review__text-field::placeholder {
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.review__text-field--contacts::placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   font-size: 18px;
@@ -285,6 +281,7 @@ img {
   padding: 16px 0 16px 0;
 }
 .review__comment {
+  box-sizing: border-box;
   font-family: inherit;
   width: 100%;
   border: none;
