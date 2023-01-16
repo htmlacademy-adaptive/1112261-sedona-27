@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="page__body">
     <div class="wrapper">
@@ -48,9 +50,9 @@
         </header>
         <section class="review">
           <h2 class="visually-hidden">Форма отзыва</h2>
-          <header class="review__header description">
-            <p class="description__title">Оставьте свой отзыв</p>
-            <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="review__line-break">а также о посещенных вами достопримечательностях</span></p>
+          <header class="review__header description description--review">
+            <p class="description__title description__title--review">Оставьте свой отзыв</p>
+            <p class="description__text description__text--review">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="review__line-break">а также о посещенных вами достопримечательностях</span></p>
           </header>
           <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="review__field-group review__field-group--name">
@@ -143,25 +145,23 @@
         <div class="main-footer__info">
           <b class="main-footer__hashtag">#visitSEDONA</b>
         </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Контакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в ютубе</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Контакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в ютубе</span>
+            </a>
+          </li>
+        </ul>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             Разработано
